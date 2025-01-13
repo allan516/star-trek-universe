@@ -19,25 +19,28 @@ main {
   width: 100vw;
   height: 100vh;
   font-size: 4rem;
-  color: white;
+  color: #eceff1;
   overflow: hidden;
 }
 
 main h1 {
   font-family: federation, Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 
 main h2 {
   font-family: "Major Mono Display", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 20px;
 }
 
-main span {
+main picture {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .home-background {
   background-image: url("../../../assets/images/background.jpg");
   background-size: cover;
