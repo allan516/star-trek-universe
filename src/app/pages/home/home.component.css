@@ -1,1 +1,44 @@
-/* #270e1d #291020 #281122 #280c1a #290f1f #270b19 #280f1e #280f1f #271426 #270f1e */
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+@font-face {
+  font-family: "federation";
+  src: url("../../../assets/font/FEC_____.TTF") format("truetype");
+}
+
+:root {
+  --cor1: #0b3d91;
+  --cor2: #ffc107;
+  --cor3: #b0bec5;
+  --cor4: #d32f2f;
+  --cor5: #121212;
+  --cor6: #eceff1;
+  --cor7: #66bb6a;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  font-size: 4rem;
+  color: white;
+  overflow: hidden;
+}
+
+main h1 {
+  font-family: federation, Arial, Helvetica, sans-serif;
+}
+
+main h2 {
+  font-family: "Major Mono Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-background {
+  background-image: url("../../../assets/images/background.jpg");
+  background-size: cover;
+}
