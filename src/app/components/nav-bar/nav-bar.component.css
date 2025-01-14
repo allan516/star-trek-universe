@@ -1,0 +1,33 @@
+menu {
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  background-color: #12121262;
+}
+
+menu div {
+  display: inline-flex;
+}
+
+menu div a {
+  height: 35px;
+  margin: 30px 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #eceff1;
+}
+
+menu div .animation {
+  position: absolute;
+  display: inline-block;
+  margin: 10px;
+  top: 70%;
+  width: 0px;
+  height: 3px;
+  background-color: #eceff1;
+  transition-duration: 0.5s;
+}
+
+menu div a:hover + .animation {
+  width: 50px;
+}
