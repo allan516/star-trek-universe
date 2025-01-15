@@ -15,20 +15,23 @@ import {
   animations: [
     trigger('scrollState', [
       state('notScrolled', style({ opacity: 1, transform: 'translateX(0)' })),
-      state('scrolled', style({ opacity: 0, transform: 'translateX(600px)' })),
+      state('scrolled', style({ opacity: 0, transform: 'translateX(1000px)' })),
       transition('notScrolled <=> scrolled', [animate('0.8s ease-in-out')]),
     ]),
 
     trigger('shipScrollControl', [
-      state('shipScrolled', style({ position: 'fixed' })),
+      state(
+        'shipScrolled',
+        style({ opacity: 0, transform: 'translateX(600px)', position: 'fixed' })
+      ),
       state('notShipScrolled', style({ position: 'fixed' })),
       transition('notShipScrolled <=> shipScrolled', [
-        animate('0.8s ease-in-out'),
+        animate('0.04s ease-in-out'),
       ]),
     ]),
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css', './home.component.media.css'],
 })
 export class HomeComponent {
   scrollState: string = 'notScrolled';
@@ -39,16 +42,16 @@ export class HomeComponent {
   onScroll(event: Event): void {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollPosition > 50) {
+    if (scrollPosition > 10) {
       // Defina a posição do scroll que irá acionar a animação
-      this.scrollState = 'scrolled'; // Ativa o estado "scrolled" quando o scroll passa de 200px
+      this.scrollState = 'scrolled'; // Ativa o estado "scrolled" quando o scroll passa de 10px
     } else {
       this.scrollState = 'notScrolled'; // Retorna ao estado "notScrolled"
     }
 
-    if (scrollPosition > 100) {
+    if (scrollPosition > 930) {
       // Defina a posição do scroll que irá acionar a animação
-      this.shipScrollState = 'shipScrolled'; // Ativa o estado "scrolled" quando o scroll passa de 200px
+      this.shipScrollState = 'shipScrolled'; // Ativa o estado "scrolled" quando o scroll passa de 1000px
     } else {
       this.shipScrollState = 'notShipScrolled'; // Retorna ao estado "notScrolled"
     }
