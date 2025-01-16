@@ -4,7 +4,9 @@ menu {
   height: 7vh;
   background-color: #12121262;
 }
-
+menu .icons {
+  display: none;
+}
 menu div {
   display: inline-flex;
 }

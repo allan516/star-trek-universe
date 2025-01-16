@@ -29,13 +29,24 @@ import {
         animate('0.04s ease-in-out'),
       ]),
     ]),
+
+    trigger('paragraphScrollControl', [
+      state('paragraphScrolled', style({ opacity: 1 })),
+      state('notParagraphScrolled', style({ opacity: 0 })),
+      transition('notParagraphScrolled => paragraphScrolled', [
+        animate('1.5s ease-in-out'),
+      ]),
+
+      transition('paragraphScrolled => notParagraphScrolled', [animate('0s')]),
+    ]),
   ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', './home.component.media.css'],
+  styleUrls: ['./home.component.css', './home-media.component.css'],
 })
 export class HomeComponent {
   scrollState: string = 'notScrolled';
   shipScrollState: string = 'notShipScrolled';
+  paragraphScrollControl: string = 'notParagraphScrolled';
 
   // Usar HostListener para escutar o evento de scroll
   @HostListener('window:scroll', ['$event'])
@@ -54,6 +65,12 @@ export class HomeComponent {
       this.shipScrollState = 'shipScrolled'; // Ativa o estado "scrolled" quando o scroll passa de 1000px
     } else {
       this.shipScrollState = 'notShipScrolled'; // Retorna ao estado "notScrolled"
+    }
+
+    if (scrollPosition > 940) {
+      this.paragraphScrollControl = 'paragraphScrolled';
+    } else {
+      this.paragraphScrollControl = 'notParagraphScrolled';
     }
   }
 }

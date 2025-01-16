@@ -17,4 +17,15 @@
     font-size: 4rem;
     margin: 20px 10px;
   }
+
+  main p {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    top: 65%;
+    font-size: 1.5rem;
+    color: #c3d5df;
+    font-family: "Orbitron", serif;
+  }
 }

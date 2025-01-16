@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+  .icons {
+    display: block !important;
+    width: 36px;
+    height: 36px;
+    margin: 15px;
+  }
+  div {
+    visibility: hidden;
+  }
+}
