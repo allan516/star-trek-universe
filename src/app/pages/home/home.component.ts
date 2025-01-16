@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 import {
   trigger,
   state,
@@ -11,7 +12,7 @@ import {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavBarComponent],
+  imports: [NavBarComponent, FooterComponent],
   animations: [
     trigger('scrollState', [
       state('notScrolled', style({ opacity: 1, transform: 'translateX(0)' })),
@@ -26,7 +27,7 @@ import {
       ),
       state('notShipScrolled', style({ position: 'fixed' })),
       transition('notShipScrolled <=> shipScrolled', [
-        animate('0.04s ease-in-out'),
+        animate('0.09s ease-in-out'),
       ]),
     ]),
 
@@ -56,21 +57,21 @@ export class HomeComponent {
       document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercentage = (scrollPosition / documentHeight) * 100;
 
-    if (scrollPercentage > 10) {
+    if (scrollPercentage > 5) {
       // Defina a posição do scroll que irá acionar a animação
       this.scrollState = 'scrolled'; // Ativa o estado "scrolled" quando o scroll passa de 10px
     } else {
       this.scrollState = 'notScrolled'; // Retorna ao estado "notScrolled"
     }
 
-    if (scrollPercentage > 50) {
+    if (scrollPercentage > 35) {
       // Defina a posição do scroll que irá acionar a animação
       this.shipScrollState = 'shipScrolled'; // Ativa o estado "scrolled" quando o scroll passa de 1000px
     } else {
       this.shipScrollState = 'notShipScrolled'; // Retorna ao estado "notScrolled"
     }
 
-    if (scrollPercentage > 70) {
+    if (scrollPercentage > 45) {
       this.paragraphScrollControl = 'paragraphScrolled';
     } else {
       this.paragraphScrollControl = 'notParagraphScrolled';

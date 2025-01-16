@@ -1,0 +1,18 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  background-color: #000103;
+  /* color: #b0bec5; */
+  color: #eceff1;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
