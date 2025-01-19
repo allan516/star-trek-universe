@@ -1,5 +1,6 @@
 <app-nav-bar></app-nav-bar>
-<section>
-  <h1>personagens</h1>
+<section *ngFor="let character of characters">
+  <h2>{{ character.nome }}</h2>
+  <p>{{ character.biografia }}</p>
 </section>
 <app-footer></app-footer>
