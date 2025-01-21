@@ -1,6 +1,47 @@
 <app-nav-bar></app-nav-bar>
-<section *ngFor="let character of characters">
-  <h2>{{ character.nome }}</h2>
-  <p>{{ character.biografia }}</p>
+
+<section>
+  <h1>personagens</h1>
+  <div *ngFor="let character of characters">
+    <table>
+      <thead>
+        <tr>
+          <th scope="colgroup" colspan="2">
+            {{ character.nome | lowercase }}, {{ character.idade }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>espécie:</td>
+          <td>{{ character.especie | lowercase }}</td>
+        </tr>
+        <tr>
+          <td>origem:</td>
+          <td>{{ character.origem | lowercase }}</td>
+        </tr>
+        <tr>
+          <td>historia:</td>
+          <td>{{ character.biografia | lowercase }}</td>
+        </tr>
+        <!-- <tr>
+          <td>habilidades</td>
+          <td>{{ character.habilidades }}</td>
+        </tr>
+        <tr>
+          <td>aliados</td>
+          <td>{{ character.aliados }}</td>
+        </tr>
+        <tr>
+          <td>inimigos</td>
+          <td>{{ character.inimigos }}</td>
+        </tr>
+        <tr>
+          <td>aparições</td>
+          <td>{{ character.aparicoes }}</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
 </section>
 <app-footer></app-footer>

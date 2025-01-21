@@ -19,7 +19,6 @@ export class CharactersComponent implements OnInit {
   ngOnInit() {
     return this.starTrekService.getCharacters().subscribe((response) => {
       this.characters = response;
-      console.log(response);
     });
   }
 }

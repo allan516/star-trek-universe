@@ -1,10 +1,40 @@
-section {
-  width: 100%;
-  height: 100vh;
+@font-face {
+  font-family: "federation";
+  src: url("../../../assets/font/FEC_____.TTF") format("truetype");
 }
 
-h1 {
-  position: relative;
-  top: 20%;
+section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #050c22;
+  color: #eceff1;
+  padding-bottom: 60px;
+}
+
+section h1 {
+  padding: 150px 5px 100px 5px;
   text-align: center;
+  color: blueviolet;
+  font-family: federation, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+}
+
+section div {
+  max-width: 900px;
+  margin: auto;
+}
+
+table td {
+  padding: 5px;
+  line-height: 1.5;
+}
+
+table th {
+  text-align: left;
+  padding: 15px;
+  color: blueviolet;
+}
+
+table tr {
+  color: rgb(247, 227, 191);
 }
