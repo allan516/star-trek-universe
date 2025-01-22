@@ -38,3 +38,17 @@ table th {
 table tr {
   color: rgb(247, 227, 191);
 }
+
+.left-image {
+  background-image: url("../../../assets/images/kirk.png");
+  background-size: contain;
+  width: 300px;
+  height: 500px;
+}
+
+.right-image {
+  background-image: url("../../../assets/images/spock.png");
+  background-size: contain;
+  width: 300px;
+  height: 500px;
+}
