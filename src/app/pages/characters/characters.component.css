@@ -6,15 +6,15 @@
 section {
   width: 100%;
   min-height: 100vh;
-  background-color: #050c22;
-  color: #eceff1;
+  /* background-color: #050c22; */
+  background-color: #34528e;
   padding-bottom: 60px;
 }
 
 section h1 {
   padding: 150px 5px 100px 5px;
   text-align: center;
-  color: blueviolet;
+  color: white;
   font-family: federation, Arial, Helvetica, sans-serif;
   font-size: 4rem;
 }
@@ -32,14 +32,19 @@ table td {
 table th {
   text-align: left;
   padding: 15px;
-  color: blueviolet;
+  color: white;
 }
 
 table tr {
-  color: rgb(247, 227, 191);
+  color: black;
+  font-weight: bolder;
+  /* color: rgb(247, 227, 191); */
 }
 
 .left-image {
+  position: absolute;
+  top: 100%;
+  left: 10%;
   background-image: url("../../../assets/images/kirk.png");
   background-size: contain;
   width: 300px;
@@ -47,6 +52,9 @@ table tr {
 }
 
 .right-image {
+  position: absolute;
+  top: 300%;
+  right: 10%;
   background-image: url("../../../assets/images/spock.png");
   background-size: contain;
   width: 300px;
