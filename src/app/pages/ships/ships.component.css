@@ -1,10 +1,26 @@
 section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
   position: relative;
   top: 20%;
   text-align: center;
+}
+
+details {
+  position: relative;
+  top: 20vh;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+details p {
+  text-align: center;
+  padding: 8px;
+}
+
+details div {
+  margin: 30px;
 }

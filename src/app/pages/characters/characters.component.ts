@@ -10,7 +10,7 @@ import { Characters } from '../../interfaces/characters.interface';
   standalone: true,
   imports: [NavBarComponent, FooterComponent, CommonModule],
   templateUrl: './characters.component.html',
-  styleUrl: './characters.component.css',
+  styleUrls: ['./characters.component.css', './characters-media.component.css']
 })
 export class CharactersComponent implements OnInit {
   characters: Characters[] = [];
