@@ -1,42 +1,39 @@
 <menu>
-  <span>
+  <span (click)="toggleMenu()">
     <img
       class="icons"
       src="../../../assets/icons/menu.png"
       alt="icone do menu"
     />
   </span>
-  <div>
-    <a [routerLink]="['/']">inicio</a>
-    <span class="animation"></span>
-  </div>
-
-  <div>
-    <a [routerLink]="['/characters']">personagens</a>
-    <span class="animation"></span>
-  </div>
-
-  <div>
-    <a [routerLink]="['/ships']">naves</a>
-    <span class="animation"></span>
-  </div>
-  <div>
-    <a [routerLink]="['/civilizations']">civilizações</a>
-    <span class="animation"></span>
-  </div>
-
-  <div>
-    <a href="#">cinema</a>
-    <span class="animation"></span>
-  </div>
-
-  <div>
-    <a href="#">séries</a>
-    <span class="animation"></span>
-  </div>
-
-  <div>
-    <a href="#">comunidade</a>
-    <span class="animation"></span>
+  <div *ngIf="toggle || windowWidth">
+    <div>
+      <a [routerLink]="['/']">inicio</a>
+      <span class="animation"></span>
+    </div>
+    <div>
+      <a [routerLink]="['/characters']">personagens</a>
+      <span class="animation"></span>
+    </div>
+    <div>
+      <a [routerLink]="['/ships']">naves</a>
+      <span class="animation"></span>
+    </div>
+    <div>
+      <a [routerLink]="['/civilizations']">civilizações</a>
+      <span class="animation"></span>
+    </div>
+    <div>
+      <a href="#">cinema</a>
+      <span class="animation"></span>
+    </div>
+    <div>
+      <a href="#">séries</a>
+      <span class="animation"></span>
+    </div>
+    <div>
+      <a href="#">comunidade</a>
+      <span class="animation"></span>
+    </div>
   </div>
 </menu>
