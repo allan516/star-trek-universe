@@ -1,5 +1,27 @@
 <app-nav-bar></app-nav-bar>
 <section>
-  <h1>civilizações</h1>
+  <article>
+    <h1>povos</h1>
+    <p>
+      os povos de star trek são um dos elementos mais fascinantes do universo
+      criado pela franquia. cada espécie representa diferentes aspectos
+      culturais, sociais e éticos, frequentemente funcionando como metáforas
+      para temas da humanidade e questões contemporâneas.
+    </p>
+    <span>
+      <input type="number" [(ngModel)]="id" placeholder="números de 1 a 31" />
+      <button (click)="getCivilization()">buscar civilização</button>
+    </span>
+
+    <div *ngIf="civilization">
+      <p><strong>nome:</strong> {{ civilization.civilizacao | lowercase }}</p>
+      <p>
+        <strong>número de registro:</strong>
+        {{ civilization.planeta | lowercase }}
+      </p>
+      <p><strong>classe:</strong> {{ civilization.fisiologia | lowercase }}</p>
+      <p><strong>descrição:</strong> {{ civilization.historia | lowercase }}</p>
+    </div>
+  </article>
 </section>
 <app-footer></app-footer>

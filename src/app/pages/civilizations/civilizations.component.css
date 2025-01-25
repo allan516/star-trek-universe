@@ -1,10 +1,66 @@
-section {
-  width: 100%;
-  height: 100vh;
+@font-face {
+  font-family: "federation";
+  src: url("../../../assets/font/FEC_____.TTF") format("truetype");
 }
 
-h1 {
-  position: relative;
-  top: 20%;
+section {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #050c22; */
+  background-color: #34528e;
+  padding-bottom: 60px;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+article h1 {
+  padding: 150px 5px 50px 5px;
   text-align: center;
+  color: white;
+  font-family: federation, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+}
+
+article p {
+  padding: 10px;
+  color: white;
+  line-height: 1.5;
+}
+
+article p strong {
+  color: black;
+  font-weight: bolder;
+}
+
+article span button {
+  padding: 10px;
+  color: blueviolet;
+  border-radius: 4px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+article span button:hover {
+  background-color: lightgray;
+  transform: translate(1px, -1px);
+  font-weight: bolder;
+}
+
+article span input {
+  padding: 10px;
+  color: blueviolet;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: none;
+  border: none;
 }

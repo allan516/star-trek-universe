@@ -36,6 +36,8 @@ section details {
 table {
   text-align: left;
   margin-left: 200px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 table td {
@@ -44,7 +46,8 @@ table td {
 }
 
 table tr {
-  color: black;
+  color: blueviolet;
+  background-color: azure;
   font-weight: bolder;
   /* color: rgb(247, 227, 191); */
 }
