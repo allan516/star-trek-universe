@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,14 +11,6 @@ import { RouterModule } from '@angular/router';
 })
 export class NavBarComponent {
   toggle: boolean = false;
-  windowWidth: boolean = false;
-
-  @HostListener('window:resize', [])
-  onResize(): void {
-    if (window.innerWidth > 840) {
-      this.windowWidth = true;
-    }
-  }
 
   toggleMenu() {
     if (window.innerWidth < 840) this.toggle = !this.toggle;
