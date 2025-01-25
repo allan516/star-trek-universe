@@ -1,27 +1,28 @@
-# StarTrekUniverse
+# Star Trek Universe 🌌
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+[![Deploy](https://img.shields.io/badge/deploy-Vercel-blue?style=flat-square&logo=vercel)](https://startrekuniverse.vercel.app/)
 
-## Development server
+**Star Trek Universe** é um projeto criado para praticar conceitos de desenvolvimento com Angular e explorar animações web.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Objetivo do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O principal objetivo deste projeto é praticar:
 
-## Build
+- **Angular**: Criação de componentes, rotas e gerenciamento de estado.
+- **Animações**: Utilização de Angular Animations e CSS para transições fluidas e atraentes.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Tecnologias Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Framework**: [Angular](https://angular.io/)
+- **Linguagem**: [TypeScript](https://www.typescriptlang.org/)
+- **Hospedagem**: [Vercel](https://vercel.com/)
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🌐 Link para o Projeto
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Acesse o site clicando aqui: [startrekuniverse.vercel.app](https://startrekuniverse.vercel.app/)

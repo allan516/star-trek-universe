@@ -12,7 +12,8 @@
   }
 
   menu div a {
-    color: blueviolet;
+    color: black;
+    font-weight: bolder;
   }
 
   .animation {
