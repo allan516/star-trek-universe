@@ -19,7 +19,11 @@
     visibility: hidden;
   }
 
-  .active {
-    display: block;
+  .menu-visibility {
+    display: none !important;
+  }
+
+  .menu-visibility.active {
+    display: block !important;
   }
 }

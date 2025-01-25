@@ -40,6 +40,10 @@ article p strong {
   font-weight: bolder;
 }
 
+article span {
+  padding: 10px;
+}
+
 article span button {
   padding: 10px;
   color: blueviolet;

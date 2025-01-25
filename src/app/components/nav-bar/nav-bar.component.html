@@ -6,7 +6,7 @@
       alt="icone do menu"
     />
   </span>
-  <div *ngIf="toggle || windowWidth">
+  <div class="menu-visibility" [class.active]="toggle">
     <div>
       <a [routerLink]="['/']">inicio</a>
       <span class="animation"></span>
