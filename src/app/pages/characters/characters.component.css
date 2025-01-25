@@ -19,9 +19,23 @@ section h1 {
   font-size: 4rem;
 }
 
-section div {
+section details {
   max-width: 900px;
   margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.content-character {
+  text-align: left;
+  text-indent: 150px;
+  padding: 15px;
+  color: white;
+}
+
+table {
+  text-align: left;
+  margin-left: 200px;
 }
 
 table td {
@@ -29,54 +43,8 @@ table td {
   line-height: 1.5;
 }
 
-table th {
-  text-align: left;
-  padding: 15px;
-  color: white;
-}
-
 table tr {
   color: black;
   font-weight: bolder;
   /* color: rgb(247, 227, 191); */
-}
-
-.left-image {
-  position: absolute;
-  top: 100%;
-  left: 10%;
-  background-image: url("../../../assets/images/kirk.png");
-  background-size: contain;
-  width: 300px;
-  height: 500px;
-}
-
-.left-image-mccoy {
-  position: absolute;
-  top: 500%;
-  left: 10%;
-  background-image: url("../../../assets/images/mccoy.png");
-  background-size: contain;
-  width: 150px;
-  height: 450px;
-}
-
-.right-image {
-  position: absolute;
-  top: 300%;
-  right: 10%;
-  background-image: url("../../../assets/images/spock.png");
-  background-size: contain;
-  width: 300px;
-  height: 500px;
-}
-
-.right-image-sulu {
-  position: absolute;
-  top: 700%;
-  right: 10%;
-  background-image: url("../../../assets/images/sulu.png");
-  background-size: contain;
-  width: 300px;
-  height: 500px;
 }

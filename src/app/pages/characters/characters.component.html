@@ -1,52 +1,31 @@
 <app-nav-bar></app-nav-bar>
 <section>
   <h1>personagens</h1>
-
-  <div *ngFor="let character of characters">
-    <table>
-      <thead>
-        <tr>
-          <th scope="colgroup" colspan="2">
-            {{ character.nome | lowercase }}, {{ character.idade }}
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>espécie:</td>
-          <td>{{ character.especie | lowercase }}</td>
-        </tr>
-        <tr>
-          <td>origem:</td>
-          <td>{{ character.origem | lowercase }}</td>
-        </tr>
-        <tr>
-          <td>historia:</td>
-          <td>{{ character.biografia | lowercase }}</td>
-        </tr>
-        <!-- <tr>
-          <td>habilidades</td>
-          <td>{{ character.habilidades }}</td>
-        </tr>
-        <tr>
-          <td>aliados</td>
-          <td>{{ character.aliados }}</td>
-        </tr>
-        <tr>
-          <td>inimigos</td>
-          <td>{{ character.inimigos }}</td>
-        </tr>
-        <tr>
-          <td>aparições</td>
-          <td>{{ character.aparicoes }}</td>
-        </tr> -->
-      </tbody>
-    </table>
-  </div>
-
-  <aside class="left-image image"></aside>
-  <aside class="right-image image"></aside>
-  <aside class="left-image-mccoy image"></aside>
-  <aside class="right-image-sulu image"></aside>
+  <details>
+    <summary>conheça alguns dos principais personagens de star trek</summary>
+    <div *ngFor="let character of characters">
+      <details>
+        <summary class="content-character">
+          {{ character.nome | lowercase }}, {{ character.idade }}
+        </summary>
+        <table>
+          <tbody>
+            <tr>
+              <td>espécie:</td>
+              <td>{{ character.especie | lowercase }}</td>
+            </tr>
+            <tr>
+              <td>origem:</td>
+              <td>{{ character.origem | lowercase }}</td>
+            </tr>
+            <tr>
+              <td>historia:</td>
+              <td>{{ character.biografia | lowercase }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </div>
+  </details>
 </section>
 <app-footer></app-footer>
