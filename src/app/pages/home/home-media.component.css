@@ -2,7 +2,7 @@
   main h1 {
     position: fixed;
     top: 200px;
-    left: 10%;
+    padding-right: 10px;
     font-family: federation, Arial, Helvetica, sans-serif;
     font-size: 5rem;
     margin-left: 10px;
